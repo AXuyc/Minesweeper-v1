@@ -12,6 +12,7 @@ class GridMap : public sf::Drawable, public sf::Transformable
 {
 public:
     void load(const std::filesystem::path& tileset, int width, int height, int tileSize) {
+        //load creates the vertices array which all of the tiles will be rendered
 
         m_tileset.loadFromFile(tileset);
 
@@ -48,8 +49,9 @@ public:
     }
 
     void update(std::vector<std::vector<int>>& mine_map, int width, int height) {
-
+        //update reads the entire grid and updates textures to tiles that have changed
        
+
         for (int i = 0; i < width; ++i) {
             for (int j = 0; j < height; ++j) {
                 sf::Vertex* triangles = &m_vertices[(i + j * width) * 6];
@@ -171,6 +173,10 @@ public:
         }
     }
     void reset(std::vector<std::vector<int>>& mine_map, int width, int height, int mine_num, int max_width, int max_height) {
+        //Reset the grid back to default and generates a new map. 
+
+
+        //The
         for (int i = 0; i < max_width; i++) {
             for (int j = 0; j < max_height; j++) {
                 mine_map[i][j] = 100;
@@ -217,6 +223,7 @@ private:
 
 
 int count_mine(std::vector<std::vector<int>>& mine_map, int x, int y) {
+    //Count the total number of mines in the surrounding tiles of the tile
     int num = 0;
     int row[] = { -1, 0, 1, -1, 1, -1, 0, 1 };
     int col[] = { -1, -1, -1, 0, 0, 1, 1, 1 };
@@ -282,6 +289,7 @@ void dfs(std::vector<std::vector<int>>& mine_map, int x, int y) {
 std::vector<int> game_state(std::vector<std::vector<int>>& mine_map) {
     //The first value of the vector can be either 1 or 0, if 1 a mine has been clicked on
     //The second value is the number of unrevealed tiles with no mines left, when it reaches 0 the win condition has been achieved
+    //There is probbly a much better way to check for win conditiion but I went with this at the time.
     std::vector<int> con = { 0, 0 };
     for (int i = 0; i < mine_map.size(); i++) {
         for (int j = 0; j < mine_map[0].size(); j++)
@@ -322,6 +330,9 @@ int main()
 
 
     //generate Title and Menu and Other UI Items
+
+    //Probably the worst code to ever be written in Visual Studio
+    //But I dont know any alternatives :/
     
     sf::Font font("ByteBounce.ttf");
     sf::Text title(font);
@@ -376,10 +387,12 @@ int main()
     timer_text.setCharacterSize(75);
     timer_text.setPosition({ 1500,0 });
 
+    //The triangle in the menu
     sf::CircleShape arrow(25, 3);
     arrow.setPosition({ 50, 380 });
     arrow.rotate(sf::degrees(210));
 
+    //The restart button outline
     sf::RectangleShape button({150, 75});
     button.setFillColor(sf::Color(192, 192, 192));
     button.setPosition({975, 0});
@@ -393,6 +406,8 @@ int main()
     
     
     //Generate Game Parameters
+    //A lot of parameters are to determine what part of the game to display
+    //Not sure how else to do it
 
 
 
@@ -419,6 +434,7 @@ int main()
     std::srand(std::time(0));
 
     
+    //Looking at this, Im pretty sure init_map is unnecessary
 
     std::vector<std::vector<int>> mine_map = init_map(max_width, max_height, mine_num);
     map.reset(mine_map, width, height, mine_num, max_width, max_height);
@@ -439,14 +455,6 @@ int main()
     Revealed + Mine: 20
 
     */
-
-    
-    for (int j = 0; j < height; j++) {
-        for (int i = 0; i < width; i++) {
-            std::cout << mine_map[i][j];
-        }
-        std::cout << std::endl;
-    }
 
 
     //For handling input, set default to false so that the application respond on the release of mouse button
@@ -473,7 +481,7 @@ int main()
 
     std::cout << "Menu Loading Successful" << std::endl;
 
-    // Timer WIP
+    //Setting timer variables
     auto time_start = steady_clock::now();
     auto now = steady_clock::now();
     auto time_elapsed = duration_cast<std::chrono::seconds>(now - time_start).count();
@@ -490,6 +498,9 @@ int main()
         
 
         //Control for Menu
+        //There is no tick speed cap in the game, so all the controls are to be executed on the cycle after release
+        //I can't find a KeyRelease function on the current version so this is how to get around it
+
         if (window.hasFocus() and !game_on) {
         
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W) or sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)) {
@@ -695,7 +706,6 @@ int main()
             }
             
             
-            
             if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
                 isPressedLeft = true;
             }
@@ -796,9 +806,9 @@ int main()
                     isPressedRight = false;
                 }
             }
-
-
         }
+        //Displaying message when gameplay ends
+        //I noticed that the restart button logic is repeated. I am too lazy to change it
         if (window.hasFocus() and (lose_con or !win_con)) {
             if (lose_con) {
                 message.setString("You Lost! Better Luck Next Time");
