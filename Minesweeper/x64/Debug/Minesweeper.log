@@ -1,0 +1,71 @@
+﻿  main.cpp
+C:\Projects\Minesweeper\Minesweeper\main.cpp(16,31): warning C4834: discarding return value of function with [[nodiscard]] attribute
+C:\Projects\Minesweeper\Minesweeper\main.cpp(29,70): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(29,70): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(29,70): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(29,70): warning C4244:             T=float
+C:\Projects\Minesweeper\Minesweeper\main.cpp(29,70): warning C4244:         ]
+C:\Projects\Minesweeper\Minesweeper\main.cpp(29,56): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(29,56): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(29,56): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(29,56): warning C4244:             T=float
+C:\Projects\Minesweeper\Minesweeper\main.cpp(29,56): warning C4244:         ]
+C:\Projects\Minesweeper\Minesweeper\main.cpp(30,76): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(30,76): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(30,76): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(30,76): warning C4244:             T=float
+C:\Projects\Minesweeper\Minesweeper\main.cpp(30,76): warning C4244:         ]
+C:\Projects\Minesweeper\Minesweeper\main.cpp(30,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(30,62): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(30,62): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(30,62): warning C4244:             T=float
+C:\Projects\Minesweeper\Minesweeper\main.cpp(30,62): warning C4244:         ]
+C:\Projects\Minesweeper\Minesweeper\main.cpp(31,82): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(31,82): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(31,82): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(31,82): warning C4244:             T=float
+C:\Projects\Minesweeper\Minesweeper\main.cpp(31,82): warning C4244:         ]
+C:\Projects\Minesweeper\Minesweeper\main.cpp(31,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(31,62): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(31,62): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(31,62): warning C4244:             T=float
+C:\Projects\Minesweeper\Minesweeper\main.cpp(31,62): warning C4244:         ]
+C:\Projects\Minesweeper\Minesweeper\main.cpp(32,82): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(32,82): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(32,82): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(32,82): warning C4244:             T=float
+C:\Projects\Minesweeper\Minesweeper\main.cpp(32,82): warning C4244:         ]
+C:\Projects\Minesweeper\Minesweeper\main.cpp(32,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(32,62): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(32,62): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(32,62): warning C4244:             T=float
+C:\Projects\Minesweeper\Minesweeper\main.cpp(32,62): warning C4244:         ]
+C:\Projects\Minesweeper\Minesweeper\main.cpp(33,76): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(33,76): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(33,76): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(33,76): warning C4244:             T=float
+C:\Projects\Minesweeper\Minesweeper\main.cpp(33,76): warning C4244:         ]
+C:\Projects\Minesweeper\Minesweeper\main.cpp(33,56): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(33,56): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(33,56): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(33,56): warning C4244:             T=float
+C:\Projects\Minesweeper\Minesweeper\main.cpp(33,56): warning C4244:         ]
+C:\Projects\Minesweeper\Minesweeper\main.cpp(34,70): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(34,70): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(34,70): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(34,70): warning C4244:             T=float
+C:\Projects\Minesweeper\Minesweeper\main.cpp(34,70): warning C4244:         ]
+C:\Projects\Minesweeper\Minesweeper\main.cpp(34,56): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(34,56): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(34,56): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(34,56): warning C4244:             T=float
+C:\Projects\Minesweeper\Minesweeper\main.cpp(34,56): warning C4244:         ]
+C:\Projects\Minesweeper\Minesweeper\main.cpp(186,29): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(303,25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(419,25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(684,25): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+C:\Projects\Minesweeper\Minesweeper\main.cpp(684,25): warning C4244:         with
+C:\Projects\Minesweeper\Minesweeper\main.cpp(684,25): warning C4244:         [
+C:\Projects\Minesweeper\Minesweeper\main.cpp(684,25): warning C4244:             _Rep=__int64
+C:\Projects\Minesweeper\Minesweeper\main.cpp(684,25): warning C4244:         ]
+  Minesweeper.vcxproj -> C:\Projects\Minesweeper\x64\Debug\Minesweeper.exe
